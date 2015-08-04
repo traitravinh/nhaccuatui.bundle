@@ -268,7 +268,7 @@ def PlayAudio(url):
     return Redirect(url)
 
 @route('/video/nhaccuatui/createMediaObject')
-def createMediaObject(url, title, thumb, art, rating_key, include_container=False):
+def createMediaObject(url, title, thumb, art, rating_key, include_container=False,includeRelatedCount=None,includeRelated=None,includeExtras=None):
 
     Log('Play Video - '+title)
     Log(url)
